@@ -14,9 +14,10 @@ Horizontal Rule:
 2. Two
 3. Three
 ![Image](https://ucsdnews.ucsd.edu/news_uploads/Resized_Geisel_Library_08.31.jpg)
-`Inline Code`
+`Code` Inline code
 ```
 code
 more code
 even more code
 ```
+code block above
