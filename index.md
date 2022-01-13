@@ -8,7 +8,6 @@
 * List Item 1
 * List Item 2
 * List Item 3
-Horizontal Rule: 
 ---
 1. One
 2. Two
