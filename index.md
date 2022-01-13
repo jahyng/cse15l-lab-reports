@@ -4,4 +4,19 @@
 **This is in bold**
 ***This is in italics and bold!***
 [TritonLink](https://act.ucsd.edu/myTritonlink20/display.htm)
+> Blockquote
+* List Item 1
+* List Item 2
+* List Item 3
+Horizontal Rule: 
+---
+1. One
+2. Two
+3. Three
 ![Image](https://ucsdnews.ucsd.edu/news_uploads/Resized_Geisel_Library_08.31.jpg)
+`Inline Code`
+```
+code
+more code
+even more code
+```
