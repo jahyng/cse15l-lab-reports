@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Week 2 Lab Report
 ## Installing VSCode
 ![Image](installingvscode.png)
@@ -33,3 +34,7 @@
 ![Image](optimize.png)
 * I tried the two commands given in the lab writeup. The first one showed me what was in the directory of my server. The second one made a copy of `WhereAmI.java` into another file `OtherMain.java`. 
 * Something interesting I found was that I do not go into the server when I ran those commands. I stayed in the client while running the commands. This can be helpful in PAs becuase I dont have to have a separate line of code for `ssh` and `scp`. Also that means I can compile and run java using the remote server as well!
+=======
+**Screenshot from earlier today!**
+![Image](pic.png)
+>>>>>>> 547a0ac8e4259825f7573b59949f467d643640a1
