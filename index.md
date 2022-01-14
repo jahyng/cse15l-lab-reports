@@ -1,4 +1,7 @@
 # JOSHUA YANG
+Cog Sci major 
+
+CS minor
 ## CSE 15L
 *This is in italics*
 **This is in bold**
@@ -8,7 +11,7 @@
 
 
 ---
-* List Item 1
+* *List Item 1*
 * List Item 2
 * List Item 3
 1. One
@@ -20,5 +23,6 @@
 code
 more code
 even more code
+super duper code
 ```
 code block above
