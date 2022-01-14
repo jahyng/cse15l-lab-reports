@@ -1,10 +1,12 @@
-<<<<<<< HEAD
 # Week 2 Lab Report
+
+
 ## Installing VSCode
 ![Image](installingvscode.png)
 * I went to the link provided in the Week 1 lab
 * Then I clicked the download for windows button 
 * I allowed it to make changes on my computer and installed the program
+
 
 ## Remotely Connecting
 ![Image](remote.png)
@@ -19,10 +21,14 @@
 * I tried the `ls` command and that showed me a list of the directries I had the directory I was currently in.
 * Then I used `cd` to change directories to the subdirectory and ran `ls` again.
 * I also tried `ls -lat` which gave me a list as well as the time that they were edited.
+
+
 ## Moving Files with `scp`
 ![Image](scp.png)
 * First, I created a new file called WhereAmI.java and put in the contents given for the lab
-* Then I ran the `scp` command to copy the file into the remote server.  
+* Then I ran the `scp` command to copy the file into the remote server. 
+
+
 ## Setting an SSH Key
 ![Image](SSHKey.png)
 * Fist I created a key for my client using `ssh-keygen` command.
@@ -30,11 +36,9 @@
 * I then logged into the remote server and used `mkdir` to create a new directory .ssh.
 * Then I logged out of the server and used the format on the lab site to, using `scp` to create a copy of the SSH Key in the server. 
 * Now when I log in, I don't need to input my password everytime! That saves alot of time!
+
+
 ## Optimizing Remote Running
 ![Image](optimize.png)
 * I tried the two commands given in the lab writeup. The first one showed me what was in the directory of my server. The second one made a copy of `WhereAmI.java` into another file `OtherMain.java`. 
 * Something interesting I found was that I do not go into the server when I ran those commands. I stayed in the client while running the commands. This can be helpful in PAs becuase I dont have to have a separate line of code for `ssh` and `scp`. Also that means I can compile and run java using the remote server as well!
-=======
-**Screenshot from earlier today!**
-![Image](pic.png)
->>>>>>> 547a0ac8e4259825f7573b59949f467d643640a1
