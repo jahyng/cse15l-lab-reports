@@ -4,11 +4,12 @@
 **This is in bold**
 ***This is in italics and bold!***
 [TritonLink](https://act.ucsd.edu/myTritonlink20/display.htm)
+
 > Blockquote
+---
 * List Item 1
 * List Item 2
 * List Item 3
----
 1. One
 2. Two
 3. Three
