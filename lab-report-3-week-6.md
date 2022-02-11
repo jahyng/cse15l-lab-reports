@@ -61,4 +61,6 @@ log in any more.
 ![image](labReport3Pic5.png)
 
 This is an image of me using `scp` and `ieng6` to copy a text file to the 
-server. 
+server. In the first try, I forgot to add 6 to ieng6. When I added it and ran it
+a second time it worked. I then logged on using the new shortcut I learned and 
+used `ls` command to check that the file is copied there. 
