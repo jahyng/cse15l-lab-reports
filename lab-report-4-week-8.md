@@ -7,7 +7,7 @@
     public void testSnip1() throws IOException {
         Path fileSnip1 = Path.of("report4Snip1.md");
         String contentSnip1 = Files.readString(fileSnip1);
-        List linksSnip1 = List.of("url.com","`google.com","google.com","ucsd.edu");
+        List linksSnip1 = List.of("url.com","`google.com");
         assertEquals(linksSnip1, MarkdownParse.getLinks(contentSnip1));
     }
 
