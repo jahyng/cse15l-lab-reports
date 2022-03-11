@@ -19,7 +19,7 @@ done
 > For the error:
 ```
 878c878
-< [\(foo)\]
+< [\(foo\]
 ---
 > [\(foo\)]
 ```
@@ -29,6 +29,13 @@ done
 ```
 > I think my implementation is correct because the last closed parenthesis is not part of the link and should not be counted. It is just another character outside of the link
 
+> For the incorrect implementation, this line of code is what is preventing the link from parsiing:
+```
+ // The close paren we need may not be the next one in the file
+            int closeParen = findCloseParen(markdown, openParen);
+```
+> This line looks for the closing paren that matches every one of the open parens. However, there is one less closed paren, so the link is never parse and is never added to the list.   
+---
 ### Second error
 > For the error:
 ```
@@ -41,9 +48,15 @@ done
 ```
 [link](foo(and(bar)))
 ```
-> I think 
-> For the incorrect implementation, 
+> I think my implementation is correct because the other parentheses after the first closing parenthesis are just characters outside of the link. However the other implmenetation adds them to the link.
 
+> For the incorrect implementation, this line of code is what is preventing the link from parsiing:
+```
+ // The close paren we need may not be the next one in the file
+            int closeParen = findCloseParen(markdown, openParen);
+```
+> This line looks for the closing paren that matches every one of the open parens. However, there is one less closed paren, so the link is never parse and is never added to the list. 
+---
 ### Third error
 > For the error: 
 ```
@@ -57,8 +70,14 @@ done
 [link](foo(and(bar))
 ```
 > I think my implementaion is correct because `foo(and(bar)` is a link, but the other implementation did not register it as such.
-> For the incorrect implementation, the code does not 
 
+> For the incorrect implementation, this line of code is what is preventing the link from parsiing:
+```
+ // The close paren we need may not be the next one in the file
+            int closeParen = findCloseParen(markdown, openParen);
+```
+> This line looks for the closing paren that matches every one of the open parens. However, there is one less closed paren, so the link is never parse and is never added to the list. 
+---
 ### Fourth error
 > For the error:
 ```
@@ -72,8 +91,14 @@ done
 [link](foo\(and\(bar\))
 ```
 > I think that my implementations is correct becuase there is a link, but the other implementation does not register it as such
-> For the incorrect implementation,
 
+> For the incorrect implementation, the line of code that is preventing thet link from parsing is:
+```
+ // The close paren we need may not be the next one in the file
+            int closeParen = findCloseParen(markdown, openParen);
+```
+> This line looks for the closing paren that matches every one of the open parens. However, there is one less closed paren, so the link is never parse and is never added to the list. 
+---
 ### Fifth error
 > For the error:
 ```
@@ -87,4 +112,10 @@ done
 [link](<foo(and(bar)>)
 ```
 > I think my implementation is correct because `<foo(and(bar)>` is a link, but the other implementation does not register it as such
-> For the incorrect implementation,
+
+> For the incorrect implementation, this line of code is what is preventing the link from parsiing:
+```
+ // The close paren we need may not be the next one in the file
+            int closeParen = findCloseParen(markdown, openParen);
+```
+> This line looks for the closing paren that matches every one of the open parens. However, there is one less closed paren, so the link is never parse and is never added to the list. 
